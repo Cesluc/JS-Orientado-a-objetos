@@ -1,14 +1,4 @@
-
-
-// Definicion clase
-
-class Cliente{
-    nombreCliente;
-    dniCliente;
-    rutCliente;
-}
-
-class CuentaCorriente
+export class CuentaCorriente
 {
     numero;
     #saldo; //creando atributo como privado _saldo con raya al piso lo muestra al imprimir en consola (solo propuesta para el desarrollador)
@@ -40,22 +30,3 @@ class CuentaCorriente
     }
 
 }
-
-
-cuentaDeLeonardo = new CuentaCorriente();
-// cuentaDeLeonardo.saldo = 0;
-
-let saldo = cuentaDeLeonardo.verSaldo();
-console.log('El saldo actual es ' + saldo);
-
-saldo = cuentaDeLeonardo.depositoEnCuenta(100);
-console.log('El saldo actual es ' + saldo);
-
-saldo = cuentaDeLeonardo.retirarDeCuenta(100);
-console.log('El saldo actual es ' + saldo);
-
-
-cuentaDeLeonardo.depositoEnCuenta(10);
-saldo = cuentaDeLeonardo.verSaldo();
-console.log('El saldo actual es ' + saldo);
-
