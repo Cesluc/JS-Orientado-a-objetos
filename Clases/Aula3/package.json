@@ -1,0 +1,12 @@
+{
+  "name": "cuentasbancopopular",
+  "version": "1.0.0",
+  "description": "Gestion de cuentas corrientes del banco popular",
+  "main": "7-Modularizando.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Cesar lucumi",
+  "license": "ISC",
+  "type":"module"
+}
