@@ -11,24 +11,26 @@ class Cliente{
 class CuentaCorriente
 {
     numero;
-    saldo;
+    #saldo; //creando atributo como privado _saldo con raya al piso lo muestra al imprimir en consola (solo propuesta para el desarrollador)
     agencia;
 
     //Constructor
 
     constructor(){
-        this.saldo = 0;
+        this.#saldo = 0;
         this. numero = '';
         this. agencia = '';
     }
 
 // Creamdo metodo de deposito
     depositoEnCuenta(valor){
-        this.saldo += valor;
+        if(valor > 0)
+            this.#saldo += valor;
     }
 
     retirarDeCuenta(valor){
-        this.saldo -= valor;
+        if(valor <= this.saldo)
+            this.#saldo -= valor;
     }
 }
 
