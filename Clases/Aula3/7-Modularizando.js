@@ -18,7 +18,7 @@ console.log(cuentaDeLeonardo);
 let saldo = cuentaDeLeonardo.verSaldo();
 
 saldo = cuentaDeLeonardo.depositoEnCuenta(150);
-console.log('El saldo actual (cuenta de leonardo) es ' + saldo);
+// console.log('El saldo actual (cuenta de leonardo) es ' + saldo);
 
 const cliente2 = new Cliente();
 cliente2.nombreCliente = 'Cesar';
@@ -30,12 +30,14 @@ cuentaDeCesar.numero = '2';
 cuentaDeCesar.agencia = '002';
 cuentaDeCesar.cliente = cliente2;
 
-console.log(cuentaDeCesar);
+// console.log(cuentaDeCesar);
 
-cuentaDeLeonardo.transferirParaCuenta(100,cuentaDeCesar)
-saldo = cuentaDeLeonardo.verSaldo();
-console.log('El saldo actual (cuenta de leonardo) es ' + saldo);
+cuentaDeLeonardo.transferirParaCuenta(100,cuentaDeCesar);
+console.log('Cuenta de Cesar', cuentaDeCesar);
+
+// saldo = cuentaDeLeonardo.verSaldo();
+// console.log('El saldo actual (cuenta de leonardo) es ' + saldo);
 
 
-let saldoCesar = cuentaDeCesar.verSaldo();
-console.log('El saldo actual (cuenta de Cesar) es ' + saldoCesar);
+// let saldoCesar = cuentaDeCesar.verSaldo();
+// console.log('El saldo actual (cuenta de Cesar) es ' + saldoCesar);
